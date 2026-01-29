@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 東京親子快樂遊</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <header>
+            <h1>🌸 2026 東京親子快樂遊 🌸</h1>
+            <p>1/31 (六) ~ 2/4 (三)</p>
+        </header>
+
+        <section class="map-section">
+            <div class="map-container">
+                <img src="assets/tokyo-cute-map.png" alt="東京可愛地圖" class="main-map">
+            </div>
+        </section>
+
+        <nav class="day-nav">
+            <button class="day-btn active" data-day="day1">Day 1</button>
+            <button class="day-btn" data-day="day2">Day 2</button>
+            <button class="day-btn" data-day="day3">Day 3</button>
+            <button class="day-btn" data-day="day4">Day 4</button>
+            <button class="day-btn" data-day="day5">Day 5</button>
+        </nav>
+
+        <main class="schedule-content">
+            <!-- Day 1 -->
+            <article id="day1" class="day-card active">
+                <div class="day-header">
+                    <img src="assets/icon-airport.png" alt="機場" class="day-icon">
+                    <h2>Day 1: 抵達與東京探索</h2>
+                    <span class="date">1/31 (六)</span>
+                </div>
+                <div class="timeline">
+                    <div class="event">
+                        <span class="time">17:30</span>
+                        <div class="content">
+                            <h3>✈️ 抵達成田機場 T2</h3>
+                            <p>虎航 IT202，準備入境！</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">19:00</span>
+                        <div class="content">
+                            <h3>🚆 前往東京車站</h3>
+                            <p>搭乘 NEX 外國人優惠車票，舒適前往市區。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">20:00</span>
+                        <div class="content">
+                            <h3>🍜 東京車站一番街</h3>
+                            <p><strong>貓咪大戰爭一番賞 (前兩抽)</strong> & 拉麵街晚餐 (六厘舍或斑鳩)。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">22:00</span>
+                        <div class="content">
+                            <h3>🏨 飯店 Check-in</h3>
+                            <p>APA 飯店 & 度假村〈潮見站前〉，好好休息。</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Day 2 -->
+            <article id="day2" class="day-card">
+                <div class="day-header">
+                    <img src="assets/icon-ghibli.png" alt="吉卜力" class="day-icon">
+                    <h2>Day 2: 新宿與吉卜力</h2>
+                    <span class="date">2/1 (日)</span>
+                </div>
+                <div class="timeline">
+                    <div class="event">
+                        <span class="time">10:30</span>
+                        <div class="content">
+                            <h3>🛍️ 新宿逛街 & 午餐</h3>
+                            <p>Yodobashi Camera 轉蛋/玩具，午餐享用敘敘苑燒肉 (新宿中央東口)。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">16:00</span>
+                        <div class="content">
+                            <h3>🍃 三鷹之森吉卜力美術館</h3>
+                            <p>進入宮崎駿的童話世界 (已預約)。</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Day 3 -->
+            <article id="day3" class="day-card">
+                <div class="day-header">
+                    <img src="assets/icon-temple.png" alt="淺草" class="day-icon">
+                    <h2>Day 3: 淺草與晴空塔</h2>
+                    <span class="date">2/2 (一)</span>
+                </div>
+                <div class="timeline">
+                    <div class="event">
+                        <span class="time">09:30</span>
+                        <div class="content">
+                            <h3>🏮 淺草寺巡禮</h3>
+                            <p>雷門拍照、仲見世通吃小吃。午餐：淺草今半或炸豬排。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">14:00</span>
+                        <div class="content">
+                            <h3>🍣 元祖食品模型屋 (合羽橋)</h3>
+                            <p>製作超逼真的食物模型體驗 (已預約)。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">15:30</span>
+                        <div class="content">
+                            <h3>🧸 上野 Yamashiroya</h3>
+                            <p>整棟的玩具百貨，小孩的天堂。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">18:00</span>
+                        <div class="content">
+                            <h3>🗼 東京晴空塔 Icon</h3>
+                            <img src="assets/icon-tower.png" alt="晴空塔" class="inline-icon" style="width: 50px; float: right;">
+                            <p>欣賞夜景與購物。</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Day 4 -->
+            <article id="day4" class="day-card">
+                <div class="day-header">
+                    <img src="assets/icon-snoopy.png" alt="史努比" class="day-icon">
+                    <h2>Day 4: 潮流與橫濱</h2>
+                    <span class="date">2/3 (二)</span>
+                </div>
+                <div class="timeline">
+                    <div class="event">
+                        <span class="time">10:00</span>
+                        <div class="content">
+                            <h3>🎀 原宿 Kiddy Land</h3>
+                            <p>表參道潮流逛街。午餐：Luke's Lobster 或 AFURI 拉麵。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">15:30</span>
+                        <div class="content">
+                            <h3>🐶 橫濱史努比商店</h3>
+                            <p>港未來東急廣場 2F，滿滿的史努比！</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Day 5 -->
+            <article id="day5" class="day-card">
+                <div class="day-header">
+                    <img src="assets/icon-shopping.png" alt="購物" class="day-icon">
+                    <h2>Day 5: 最後採買與歸途</h2>
+                    <span class="date">2/4 (三)</span>
+                </div>
+                <div class="timeline">
+                    <div class="event">
+                        <span class="time">09:00</span>
+                        <div class="content">
+                            <h3>🛒 潮見 Maruetsu 超市</h3>
+                            <p>最後補貨，買零食水果。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">11:00</span>
+                        <div class="content">
+                            <h3>🍛 機場午餐</h3>
+                            <p>成田 T2 購物與用餐 (La Toque 咖哩 或 銀章魚燒)。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">13:00</span>
+                        <div class="content">
+                            <h3>🛫 起飛回家</h3>
+                            <p>虎航 IT201，快樂回台灣！</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>Made with ❤️ for Family Trip</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
