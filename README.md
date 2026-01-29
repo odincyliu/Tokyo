@@ -10,7 +10,8 @@
 
 ## 🚀 如何瀏覽
 
-直接開啟 [index.html](index.html) 即可開始瀏覽您的東京可愛行程！
+直接開啟 [https://odincyliu.github.io/Tokyo/](https://odincyliu.github.io/Tokyo/) 即可開始瀏覽您的東京可愛行程！
+(請確保您已將專案 Push 至 GitHub 並開啟 GitHub Pages 功能)
 
 ---
 *Powered by Antigravity & Gemini*
