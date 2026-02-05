@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 東京親子快樂遊</title>
+    <title>2026 東京七天六夜親子遊</title>
+    <meta name="description" content="2026年春季東京七天六夜親子精選行程，包含迪士尼、吉卜力、TeamLab等人氣景點。">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
+
 <body>
     <div class="bg-overlay"></div>
     <div class="container">
         <header>
-            <h1>🌸 2026 東京親子快樂遊 🌸</h1>
-            <p>1/31 (六) ~ 2/4 (三)</p>
+            <h1>🌸 2026 東京七天六夜親子遊 🌸</h1>
+            <p>3/14 (六) ~ 3/20 (五)</p>
+            <p class="flight-info">✈️ IT202 13:30→17:30 / IT201 13:00→16:25</p>
         </header>
 
         <section class="map-section">
@@ -24,171 +28,280 @@
             </div>
         </section>
 
-        <nav class="day-nav">
+        <!-- 7 天導航按鈕 -->
+        <nav class="day-nav" id="day-nav">
             <button class="day-btn active" data-day="day1">Day 1</button>
             <button class="day-btn" data-day="day2">Day 2</button>
             <button class="day-btn" data-day="day3">Day 3</button>
             <button class="day-btn" data-day="day4">Day 4</button>
             <button class="day-btn" data-day="day5">Day 5</button>
+            <button class="day-btn" data-day="day6">Day 6</button>
+            <button class="day-btn" data-day="day7">Day 7</button>
         </nav>
 
         <main class="schedule-content">
-            <!-- Day 1 -->
+            <!-- Day 1：抵達東京 -->
             <article id="day1" class="day-card active">
                 <div class="day-header">
                     <img src="assets/icon-airport.png" alt="機場" class="day-icon">
-                    <h2>Day 1: 抵達與東京探索</h2>
-                    <span class="date">1/31 (六)</span>
+                    <h2>Day 1: 抵達東京</h2>
+                    <span class="date">3/14 (六)</span>
                 </div>
                 <div class="timeline">
                     <div class="event">
                         <span class="time">17:30</span>
                         <div class="content">
                             <h3>✈️ 抵達成田機場 T2</h3>
-                            <p>虎航 IT202，準備入境！</p>
+                            <p>虎航 IT202，辦理入境手續，準備開啟旅程！</p>
                         </div>
                     </div>
                     <div class="event">
-                        <span class="time">19:00</span>
+                        <span class="time">18:30</span>
                         <div class="content">
-                            <h3>🚆 前往東京車站</h3>
-                            <p>搭乘 NEX 外國人優惠車票，舒適前往市區。</p>
+                            <h3>🚆 N'EX 或巴士前往市區</h3>
+                            <p>搭乘成田特快或利木津巴士前往東京車站或飯店。</p>
                         </div>
                     </div>
                     <div class="event">
                         <span class="time">20:00</span>
                         <div class="content">
-                            <h3>🍜 東京車站一番街</h3>
-                            <p><strong>貓咪大戰爭一番賞 (前兩抽)</strong> & 拉麵街晚餐 (六厘舍或斑鳩)。</p>
-                        </div>
-                    </div>
-                    <div class="event">
-                        <span class="time">22:00</span>
-                        <div class="content">
                             <h3>🏨 飯店 Check-in</h3>
-                            <p>APA 飯店 & 度假村〈潮見站前〉，好好休息。</p>
+                            <p>APA 飯店〈潮見站前〉，旁有 Maruetsu 超市可買宵夜水果。</p>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <!-- Day 2 -->
+            <!-- Day 2：吉卜力 + 吉祥寺 -->
             <article id="day2" class="day-card">
                 <div class="day-header">
                     <img src="assets/icon-ghibli.png" alt="吉卜力" class="day-icon">
-                    <h2>Day 2: 新宿與吉卜力</h2>
-                    <span class="date">2/1 (日)</span>
-                </div>
-                <div class="timeline">
-                    <div class="event">
-                        <span class="time">10:30</span>
-                        <div class="content">
-                            <h3>🛍️ 新宿逛街 & 午餐</h3>
-                            <p>Yodobashi Camera 轉蛋/玩具，午餐享用敘敘苑燒肉 (新宿中央東口)。</p>
-                        </div>
-                    </div>
-                    <div class="event">
-                        <span class="time">16:00</span>
-                        <div class="content">
-                            <h3>🍃 三鷹之森吉卜力美術館</h3>
-                            <p>進入宮崎駿的童話世界 (已預約)。</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Day 3 -->
-            <article id="day3" class="day-card">
-                <div class="day-header">
-                    <img src="assets/icon-temple.png" alt="淺草" class="day-icon">
-                    <h2>Day 3: 淺草與晴空塔</h2>
-                    <span class="date">2/2 (一)</span>
-                </div>
-                <div class="timeline">
-                    <div class="event">
-                        <span class="time">09:30</span>
-                        <div class="content">
-                            <h3>🏮 淺草寺巡禮</h3>
-                            <p>雷門拍照、仲見世通吃小吃。午餐：淺草今半或炸豬排。</p>
-                        </div>
-                    </div>
-                    <div class="event">
-                        <span class="time">14:00</span>
-                        <div class="content">
-                            <h3>🍣 元祖食品模型屋 (合羽橋)</h3>
-                            <p>製作超逼真的食物模型體驗 (已預約)。</p>
-                        </div>
-                    </div>
-                    <div class="event">
-                        <span class="time">15:30</span>
-                        <div class="content">
-                            <h3>🧸 上野 Yamashiroya</h3>
-                            <p>整棟的玩具百貨，小孩的天堂。</p>
-                        </div>
-                    </div>
-                    <div class="event">
-                        <span class="time">18:00</span>
-                        <div class="content">
-                            <h3>🗼 東京晴空塔 Icon</h3>
-                            <img src="assets/icon-tower.png" alt="晴空塔" class="inline-icon" style="width: 50px; float: right;">
-                            <p>欣賞夜景與購物。</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Day 4 -->
-            <article id="day4" class="day-card">
-                <div class="day-header">
-                    <img src="assets/icon-snoopy.png" alt="史努比" class="day-icon">
-                    <h2>Day 4: 潮流與橫濱</h2>
-                    <span class="date">2/3 (二)</span>
+                    <h2>Day 2: 吉卜力與吉祥寺</h2>
+                    <span class="date">3/15 (日)</span>
                 </div>
                 <div class="timeline">
                     <div class="event">
                         <span class="time">10:00</span>
                         <div class="content">
-                            <h3>🎀 原宿 Kiddy Land</h3>
-                            <p>表參道潮流逛街。午餐：Luke's Lobster 或 AFURI 拉麵。</p>
+                            <h3>🍃 三鷹之森吉卜力美術館</h3>
+                            <p>進入宮崎駿的童話世界，觀賞限定短篇電影 (需預約)。</p>
                         </div>
                     </div>
                     <div class="event">
-                        <span class="time">15:30</span>
+                        <span class="time">12:30</span>
                         <div class="content">
-                            <h3>🐶 橫濱史努比商店</h3>
-                            <p>港未來東急廣場 2F，滿滿的史努比！</p>
+                            <h3>🌳 井之頭恩賜公園</h3>
+                            <p>穿越公園散步至吉祥寺，踩天鵝船、讓孩子奔跑。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">15:00</span>
+                        <div class="content">
+                            <h3>🛍️ 吉祥寺逛街</h3>
+                            <p>藥妝、百貨林立，Yodobashi Camera 玩具模型樓層。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">18:00</span>
+                        <div class="content">
+                            <h3>🍜 晚餐</h3>
+                            <p>吉祥寺商圈或返回東京車站一番街（拉麵街/動漫人物街）。</p>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <!-- Day 5 -->
+            <!-- Day 3：東京迪士尼樂園 -->
+            <article id="day3" class="day-card">
+                <div class="day-header">
+                    <img src="assets/icon-disney.png" alt="迪士尼" class="day-icon">
+                    <h2>Day 3: 東京迪士尼</h2>
+                    <span class="date">3/16 (一)</span>
+                </div>
+                <div class="timeline">
+                    <div class="event">
+                        <span class="time">08:00</span>
+                        <div class="content">
+                            <h3>🏰 出發前往迪士尼</h3>
+                            <p>搭乘 JR 京葉線約 10 分鐘至舞濱站。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">08:30</span>
+                        <div class="content">
+                            <h3>✨ 東京迪士尼樂園入園</h3>
+                            <p><strong>親子必玩</strong>：美女與野獸、杯麵歡樂之旅、米奇魔法音樂世界。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">15:00</span>
+                        <div class="content">
+                            <h3>🎠 日間遊行：和諧色彩</h3>
+                            <p>Harmony in Color 遊行，繽紛多彩的歡樂時光！</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">20:30</span>
+                        <div class="content">
+                            <h3>🎆 夜間煙火 & 回程</h3>
+                            <p>欣賞璀璨煙火後退場，10 分鐘即回飯店休息。</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Day 4：橫濱一日遊 -->
+            <article id="day4" class="day-card">
+                <div class="day-header">
+                    <img src="assets/icon-yokohama.png" alt="橫濱" class="day-icon">
+                    <h2>Day 4: 橫濱探險</h2>
+                    <span class="date">3/17 (二)</span>
+                </div>
+                <div class="timeline">
+                    <div class="event">
+                        <span class="time">10:30</span>
+                        <div class="content">
+                            <h3>🍞 麵包超人/SNOOPY</h3>
+                            <p>橫濱麵包超人兒童博物館 (適合幼童) 或 SNOOPY TOWN。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">14:00</span>
+                        <div class="content">
+                            <h3>🚡 YOKOHAMA AIR CABIN</h3>
+                            <p>橫濱空中纜車，俯瞰港灣美景。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">15:00</span>
+                        <div class="content">
+                            <h3>🧱 紅磚倉庫散步</h3>
+                            <p>文創小店、復古建築，港口氣氛滿點。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">16:30</span>
+                        <div class="content">
+                            <h3>🍜 合味道紀念館 DIY</h3>
+                            <p>親子 DIY 專屬泡麵（需預約），超有趣！</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">19:00</span>
+                        <div class="content">
+                            <h3>🌃 橫濱中華街晚餐</h3>
+                            <p>港未來夜景配上中華美食，完美結束今天。</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Day 5：台場 / TeamLab -->
             <article id="day5" class="day-card">
                 <div class="day-header">
-                    <img src="assets/icon-shopping.png" alt="購物" class="day-icon">
-                    <h2>Day 5: 最後採買與歸途</h2>
-                    <span class="date">2/4 (三)</span>
+                    <img src="assets/icon-teamlab.png" alt="TeamLab" class="day-icon">
+                    <h2>Day 5: 台場藝術之旅</h2>
+                    <span class="date">3/18 (三)</span>
+                </div>
+                <div class="timeline">
+                    <div class="event">
+                        <span class="time">10:00</span>
+                        <div class="content">
+                            <h3>💧 TeamLab Planets TOKYO</h3>
+                            <p>赤腳體驗「水」與「花」的沉浸式藝術，小孩超愛！（需預約）</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">13:00</span>
+                        <div class="content">
+                            <h3>🍽️ DiverCity 午餐</h3>
+                            <p>美食街用餐：金子半之助天丼或其他美食。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">14:30</span>
+                        <div class="content">
+                            <h3>🧱 樂高樂園 / Joypolis</h3>
+                            <p>DECKS 內的 Legoland Discovery Center 或東京 Joypolis 室內遊樂園。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">17:00</span>
+                        <div class="content">
+                            <h3>🗽 台場夕陽絕景</h3>
+                            <p>自由女神像與跨海大橋夕陽，最適合拍照留念。</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Day 6：澀谷/原宿 -->
+            <article id="day6" class="day-card">
+                <div class="day-header">
+                    <img src="assets/icon-shibuya.png" alt="澀谷" class="day-icon">
+                    <h2>Day 6: 澀谷潮流巡禮</h2>
+                    <span class="date">3/19 (四)</span>
+                </div>
+                <div class="timeline">
+                    <div class="event">
+                        <span class="time">10:00</span>
+                        <div class="content">
+                            <h3>⛩️ 明治神宮 & 原宿</h3>
+                            <p>Kiddy Land 卡通周邊、竹下通吃可麗餅。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">15:00</span>
+                        <div class="content">
+                            <h3>🎮 澀谷 PARCO 動漫聖地</h3>
+                            <p><strong>Nintendo TOKYO</strong>、<strong>Pokémon Center</strong>、<strong>JUMP
+                                    SHOP</strong>！</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">17:30</span>
+                        <div class="content">
+                            <h3>🌇 SHIBUYA SKY 日落夜景</h3>
+                            <p>360度露天展望台，俯瞰東京最美日落（需預約）。</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="time">19:30</span>
+                        <div class="content">
+                            <h3>🍖 澀谷晚餐</h3>
+                            <p>燒肉、壽司，犒賞旅途最後一個完整夜晚。</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Day 7：回程 -->
+            <article id="day7" class="day-card">
+                <div class="day-header">
+                    <img src="assets/icon-shopping.png" alt="回程" class="day-icon">
+                    <h2>Day 7: 機場歸途</h2>
+                    <span class="date">3/20 (五)</span>
                 </div>
                 <div class="timeline">
                     <div class="event">
                         <span class="time">09:00</span>
                         <div class="content">
-                            <h3>🛒 潮見 Maruetsu 超市</h3>
-                            <p>最後補貨，買零食水果。</p>
+                            <h3>🧳 飯店 Check-out</h3>
+                            <p>悠閒享用早餐後出發，搭乘 N'EX 或 Access 特急前往成田機場。</p>
                         </div>
                     </div>
                     <div class="event">
-                        <span class="time">11:00</span>
+                        <span class="time">10:30</span>
                         <div class="content">
-                            <h3>🍛 機場午餐</h3>
-                            <p>成田 T2 購物與用餐 (La Toque 咖哩 或 銀章魚燒)。</p>
+                            <h3>🛒 機場最後採買</h3>
+                            <p>逛免稅店 Fa-So-La、Pokémon Store 成田店。</p>
                         </div>
                     </div>
                     <div class="event">
                         <span class="time">13:00</span>
                         <div class="content">
                             <h3>🛫 起飛回家</h3>
-                            <p>虎航 IT201，快樂回台灣！</p>
+                            <p>虎航 IT201，快樂回台灣！下次再見，東京！</p>
                         </div>
                     </div>
                 </div>
@@ -202,4 +315,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
